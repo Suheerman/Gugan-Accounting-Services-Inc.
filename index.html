@@ -149,78 +149,23 @@
               </div>
             </div>
             <div class="col-lg-6 align-self-end">
-			  <div class="hero-image wow fadeInUp" data-wow-delay=".5s">
-				<!-- Slideshow Container -->
-				<div class="slideshow-container" style="position: relative; width: 100%; overflow: hidden;">
-
-				  <!-- Image + Caption Pairs -->
-				  <div class="slide" style="display: none; position: relative;">
-					<img src="1.png" alt="Image 1" style="width:100%; display:block;">
-					<div style="position:absolute; bottom:0; width:100%; background:rgba(255,255,255,0.85); color:#000; text-align:center; font-weight:500; padding:8px 0; font-size:14px;">
-					  <b>Drowning in numbers, losing control.</b>
-					</div>
-				  </div>
-
-				  <div class="slide" style="display: none; position: relative;">
-					<img src="2.png" alt="Image 2" style="width:100%; display:block;">
-					<div style="position:absolute; bottom:0; width:100%; background:rgba(255,255,255,0.85); color:#000; text-align:center; font-weight:500; padding:8px 0; font-size:14px;">
-					  <b>A spark of hope appears.</b>
-					</div>
-				  </div>
-
-				  <div class="slide" style="display: none; position: relative;">
-					<img src="3.png" alt="Image 3" style="width:100%; display:block;">
-					<div style="position:absolute; bottom:0; width:100%; background:rgba(255,255,255,0.85); color:#000; text-align:center; font-weight:500; padding:8px 0; font-size:14px;">
-					  <b>One click to financial clarity.</b>
-					</div>
-				  </div>
-
-				  <div class="slide" style="display: none; position: relative;">
-					<img src="4.png" alt="Image 4" style="width:100%; display:block;">
-					<div style="position:absolute; bottom:0; width:100%; background:rgba(255,255,255,0.85); color:#000; text-align:center; font-weight:500; padding:8px 0; font-size:14px;">
-					  <b>Stepping into smarter accounting.</b>
-					</div>
-				  </div>
-
-				  <div class="slide" style="display: none; position: relative;">
-					<img src="5.png" alt="Image 5" style="width:100%; display:block;">
-					<div style="position:absolute; bottom:0; width:100%; background:rgba(255,255,255,0.85); color:#000; text-align:center; font-weight:500; padding:8px 0; font-size:14px;">
-					  <b>Real people, real financial solutions.</b>
-					</div>
-				  </div>
-
-				  <div class="slide" style="display: none; position: relative;">
-					<img src="6.png" alt="Image 6" style="width:100%; display:block;">
-					<div style="position:absolute; bottom:0; width:100%; background:rgba(255,255,255,0.85); color:#000; text-align:center; font-weight:500; padding:8px 0; font-size:14px;">
-					  <b>We handle the numbers, you relax.</b>
-					</div>
-				  </div>
-
-				  <div class="slide" style="display: none; position: relative;">
-					<img src="7.png" alt="Image 7" style="width:100%; display:block;">
-					<div style="position:absolute; bottom:0; width:100%; background:rgba(255,255,255,0.85); color:#000; text-align:center; font-weight:500; padding:8px 0; font-size:14px;">
-					  <b>The weight of worry lifts away.</b>
-					</div>
-				  </div>
-
-				  <div class="slide" style="display: none; position: relative;">
-					<img src="8.png" alt="Image 8" style="width:100%; display:block;">
-					<div style="position:absolute; bottom:0; width:100%; background:rgba(255,255,255,0.85); color:#000; text-align:center; font-weight:500; padding:8px 0; font-size:14px;">
-					  <b>Every goal, checked and completed.</b>
-					</div>
-				  </div>
-
-				  <div class="slide" style="display: none; position: relative;">
-					<img src="9.png" alt="Image 9" style="width:100%; display:block;">
-					<div style="position:absolute; bottom:0; width:100%; background:rgba(255,255,255,0.85); color:#000; text-align:center; font-weight:500; padding:8px 0; font-size:14px;">
-					  <b>Success without stress — that’s Gugan Accounting.</b>
-					</div>
-				  </div>
-
-				</div>
-				<!-- End Slideshow Container -->
-			  </div>
-			</div>
+              <div class="hero-image wow fadeInUp" data-wow-delay=".5s">
+                <!-- Slideshow Container -->
+                <div class="slideshow-container">
+                    <img src="1.png" alt="Image 1">
+                    <img src="2.png" alt="Image 2">
+                    <img src="3.png" alt="Image 3">
+                    <img src="4.png" alt="Image 4">
+                    <img src="5.png" alt="Image 5">
+                    <img src="6.png" alt="Image 6">
+                    <img src="7.png" alt="Image 7">
+                    <img src="8.png" alt="Image 8">
+                    <img src="9.png" alt="Image 9">
+                    
+                </div>
+                <!-- End Slideshow Container -->
+              </div>
+            </div>
 
 			
 
@@ -678,26 +623,5 @@
         // Start the slideshow
         setInterval(showNextImage, intervalTime);
     </script>
-	<!-- Inline JS for looping slideshow -->
-			<script>
-			  (function() {
-				let slides = document.querySelectorAll(".slideshow-container .slide");
-				let index = 0;
-
-				function showSlide(i) {
-				  slides.forEach((slide, idx) => {
-					slide.style.display = (idx === i) ? "block" : "none";
-				  });
-				}
-
-				function nextSlide() {
-				  index = (index + 1) % slides.length;
-				  showSlide(index);
-				}
-
-				showSlide(index); // Show first slide
-				setInterval(nextSlide, 3000); // Change every 3 seconds
-			  })();
-			</script>
   </body>
 </html>
