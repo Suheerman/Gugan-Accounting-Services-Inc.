@@ -50,6 +50,16 @@
             height: 100%; /* Ensure it takes full height of its parent */
         }
     </style>
+	<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+	</script>
+	<script type="text/javascript">
+	   (function(){
+		  emailjs.init({
+			publicKey: "8GNGZ7h6BaMPYp7K9",
+		  });
+	   })();
+	</script>
   </head>
   <body>
     <!--[if lte IE 9]>
@@ -439,7 +449,7 @@
                   </div>
                   <div class="col-md-12">
                     <div class="form-button">
-                      <button type="submit" class="button"> <i class="lni lni-telegram-original"></i> Submit</button>
+                      <button type="button" class="button" onclick="sendEmail()"> <i class="lni lni-telegram-original"></i> Submit</button>
                     </div>
                   </div>
                 </div>
@@ -490,6 +500,7 @@
         </div>
       </div>
     </section>
+	<script type="text/javascript" src="scrip.js"></script>
     <!-- ========================= contact-style-3 end ========================= -->
 
     
